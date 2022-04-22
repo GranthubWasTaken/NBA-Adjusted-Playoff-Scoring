@@ -1,7 +1,7 @@
 # NBA-data
 # IPYNB contains functions to,
   scrape player data from basketball-reference since 1974 for
-      * per 100 possession data
+     * per 100 possession data
      * advanced data
      * play-by-play data (only extending back to 1997)
   find 2, 3, and 5 year stretches of statistical values for players (and export csv file containing each unique 2, 3, and 5 year strech of data for each player)

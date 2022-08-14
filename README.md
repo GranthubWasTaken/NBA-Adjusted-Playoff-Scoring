@@ -7,10 +7,10 @@
    * advanced data
    * play-by-play data (only extending back to 1997)
    
- find 2, 3, 5, 8 and 10 year stretches of statistical values for players (and export csv file containing each unique stretch of data for each player) other functions to organize and manipulate data in more digestible or interesting formats.
+ find multi-year stretches of statistical values for players (and export csv file containing each unique stretch of data for each player) other functions to organize and manipulate data in more digestible or interesting formats.
  
      such as, comparing change in statistical values for each player between regular season and postseason
-     e.g. 5 year change in regular season and postseason PTS per 75 (pace-adjusted scoring rate) and TS+ (league adjusted scoring efficiency) for Kevin Durant from 2015-19.
+     e.g. 5 year change in regular season and postseason PTS per 75 (pace-adjusted scoring rate) and TS+ (era/opponent adjusted scoring efficiency) for Kevin Durant from 2015-19.
  Create adjusted playoff efficiency 
   1. Scraping NBA team's defensive stats since 1974 (TS% allowed [points per possession allowed])
   2. Scraping player URL's since 1974 and using them to scrape their playoff series for their TS%

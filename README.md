@@ -16,6 +16,7 @@
   2. Scraping player URL's since 1974 and using them to scrape their playoff series for their TS%
   3. Dividing a player's TS% by their playoff opponent's regular seasons TS%
   4. Creating total playoff numbers by weighing for MP in each series
+
  Create adjusted playoff scoring rate
   1. Scraping NBA players' stats since 1974 (league avg. pts per possession for players)
   2. Finding highest league avg. pts per possession (2021)

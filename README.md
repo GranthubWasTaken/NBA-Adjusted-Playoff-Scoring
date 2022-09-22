@@ -22,10 +22,10 @@
   2. Finding highest league avg. pts per possession (2021)
   3. Creating Scoring Coefficient for each season since 1974. 
   
-     Scoring Coefficient = 1 + (1 - (league avg pts per possession / 2021 pts per possession))
+     Scoring Coefficient = max league avg pts per possession / current pts per possession
      
      ex: 1979 George Gervin   
-     1 + (1 - (15.554017 / 16.720268)) = 1.069751
+     16.720268 / 15.554017 = 1.069751
      
   4. Multiply players' PTS per 75 possessions (PP75) by Scoring Coefficient
   

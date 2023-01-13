@@ -1,8 +1,8 @@
 # NBA-data
 # IPYNB contains functions to,
- scrape player data from basketball-reference since 1974 for
+ scrape player data from basketball-reference since 1952 (excluding 1954*) for
    * player URL's
-   * shooting location data
+   * shooting location data (only extending back to 1997)
    * per 100 possession data
    * advanced data
    * play-by-play data (only extending back to 1997)

@@ -32,7 +32,7 @@
   
   1. Scraping NBA teams' defensive stats since 1974 (TS% allowed [points per possession allowed]).
   2. Scraping player URL's since 1952 (> 1000 MP) and using their basketball-reference player pages' organized playoff series data table to total playoff scoring.
-   a) Dividing a player's TS% by their playoff opponent's regular seasons TS%; series-by-series
+   * Dividing a player's TS% by their playoff opponent's regular seasons TS%; series-by-series
 
       ex: 
       
@@ -50,9 +50,9 @@
 
  Create adjusted playoff scoring rate
   1. Era Scoring Coefficient
-   a) Scraping NBA/ABA players' stats since 1974 (league avg. pts per possession for players)
-   b) Finding highest league avg. pts per 75 possessions. That is presently 2021 (16.72 PP75) 
-   c) Creating Era Scoring Coefficient for each season since 1974.
+   * Scraping NBA/ABA players' stats since 1974 (league avg. pts per possession for players)
+   * Finding highest league avg. pts per 75 possessions. That is presently 2021 (16.72 PP75) 
+   * Creating Era Scoring Coefficient for each season since 1974.
 
       Era Scoring Coefficient = max league avg pts per 75 possessions / current season pts per 75 possessions
 
@@ -66,7 +66,7 @@
 
       Be it changes in officiating or league-wide philosophy, scoring is easier in 2022 than it was in 2004 on a possession basis. This is thus accounted for in cross-       era comparisons. 
 
-   d) Adjust players' PTS per 75 possessions (PP75) by Era Scoring Coefficient
+   * Adjust players' PTS per 75 possessions (PP75) by Era Scoring Coefficient
 
       ex: 
       
@@ -77,9 +77,9 @@
          27.15 (Jayson's actual PP75) * 1.002 (Era Scoring Coefficient/Adjustment) = 27.20 (Era Adjusted Scoring Rate)
       
   2. Opponent Scoring Coefficient
-   a) Scraping NBA/ABA teams' stats since 1974 (DefRtg [points allowed per 100 possessions])
-   b) Finding rDefRtg (DefRtg / league avg. DefRtg)
-   c) Creating Opponent Scoring Coefficient for each playoff series
+   * Scraping NBA/ABA teams' stats since 1974 (DefRtg [points allowed per 100 possessions])
+   * Finding rDefRtg (DefRtg / league avg. DefRtg)
+   * Creating Opponent Scoring Coefficient for each playoff series
 
       Opponent Scoring Coefficient = league avg. DefRtg / opponent DefRtg
 
@@ -96,7 +96,7 @@
       2022 Nets were a below league average defense (1% worse). 2004 Spurs were 9% better than league average (making them one of the best regular season defenses in         NBA history)
       
 
-   d) Adjust players' PTS per 75 possessions (PP75) by Opponent Scoring Coefficient
+   * Adjust players' PTS per 75 possessions (PP75) by Opponent Scoring Coefficient
 
       ex: 
       

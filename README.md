@@ -56,7 +56,6 @@
 
       Era Scoring Coefficient = max league avg pts per 75 possessions / current season pts per 75 possessions
 
-      ex: 
       
           2004  
           16.72 (2021 avg PP75) / 15.33 (2004 avg PP75) = 1.09

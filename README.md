@@ -21,6 +21,7 @@
     ex. 
     
         2004 Kobe Bryant vs San Antonio Spurs (24.48 Pts per 75 possessions (PP75); .5304 TS%)
+        
         2022 Jayson Tatum vs Brooklyn Nets (27.15 Pts per 75 possessions (PP75); .6146 TS%)
       
   Jayson Tatum has higher scoring rate and efficiency. Both conventional measures of scoring effectiveness. Is this evidence Tatum had a better scoring series?
@@ -38,6 +39,7 @@
           2004 Kobe Bryant vs. Spurs
           (Kobe Bryant TS% / Spurs TS% allowed in regular season) * 100
           (0.5304 / 0.4798) * 100 = 110.54 TS+
+          
           2022 Jayson Tatum vs. Nets
           (Kobe Bryant TS% / Spurs TS% allowed in regular season) * 100
           (0.6146 / 0.5588) * 100 = 109.99 TS+
@@ -70,6 +72,7 @@
       
          2004 Kobe Bryant vs Spurs
          24.48 (Kobe's actual PP75) * 1.09 (Era Scoring Coefficient/Adjustment) = 26.68 (Era Adjusted Scoring Rate)
+         
          2022 Jayson Tatum vs Nets
          27.15 (Jayson's actual PP75) * 1.002 (Era Scoring Coefficient/Adjustment) = 27.20 (Era Adjusted Scoring Rate)
       
@@ -85,6 +88,7 @@
           2004 Spurs =
           (2004 league avg. DefRtg) / (2004 Spurs DefRtg)
           102.89 / 94.1 (2004 Spurs DefRtg) = 1.09
+          
           2022 Nets =
           (2022 league avg. DefRtg) / (2022 Nets DefRtg)
           111.95 / 112.8 (2004 Spurs DefRtg) = 0.99
@@ -98,6 +102,7 @@
       
           2004 Kobe Bryant vs Spurs =    
           26.68 * 1.09 = 29.08
+          
           2022 Jayson Tatum vs Nets =    
           27.20 * 0.99 = 26.93
       
@@ -106,6 +111,7 @@
    Adjusted Scoring:
    
    Kobe Bryant vs 2004 Spurs: 29.08 PP 75; 110.54 TS+
+   
    Jayson Tatum vs 2022 Nets: 26.93 PP 75; 109.99 TS+
    
    Kobe Bryant's series--originally appearing far inferior to Jayson Tatum's--now looks superior.

@@ -18,7 +18,7 @@
  
   Reasoning: Players' raw scoring stats cannot be accurately compared across various periods of NBA history nor various qualities of opponent defense.
   
-    ex. 
+
     
         2004 Kobe Bryant vs San Antonio Spurs (24.48 Pts per 75 possessions (PP75); .5304 TS%)
         
@@ -34,7 +34,7 @@
   2. Scraping player URL's since 1952 (> 1000 MP) and using their basketball-reference player pages' organized playoff series data table to total playoff scoring.
    * Dividing a player's TS% by their playoff opponent's regular seasons TS%; series-by-series
 
-      ex: 
+
       
           2004 Kobe Bryant vs. Spurs
           (Kobe Bryant TS% / Spurs TS% allowed in regular season) * 100
@@ -67,7 +67,7 @@
 
    * Adjust players' PTS per 75 possessions (PP75) by Era Scoring Coefficient
 
-      ex: 
+
       
          2004 Kobe Bryant vs Spurs
          24.48 (Kobe's actual PP75) * 1.09 (Era Scoring Coefficient/Adjustment) = 26.68 (Era Adjusted Scoring Rate)
@@ -82,7 +82,7 @@
 
       Opponent Scoring Coefficient = league avg. DefRtg / opponent DefRtg
 
-      ex: 
+
       
           2004 Spurs =
           (2004 league avg. DefRtg) / (2004 Spurs DefRtg)
@@ -97,7 +97,7 @@
 
    * Adjust players' PTS per 75 possessions (PP75) by Opponent Scoring Coefficient
 
-      ex: 
+
       
           2004 Kobe Bryant vs Spurs =    
           26.68 * 1.09 = 29.08

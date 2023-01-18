@@ -1,5 +1,5 @@
 # NBA-data
-# IPYNB contains functions to,
+# Functions Scraping Basketball-Reference/Tallying Multi-Year Stretches
  scrape player data from basketball-reference since 1952 (excluding 1954*) for
    * player URL's
    * shooting location data (only extending back to 1997)

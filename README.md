@@ -41,7 +41,7 @@
           (0.5304 / 0.4798) * 100 = 110.54 TS+
           
           2022 Jayson Tatum vs. Nets
-          (Kobe Bryant TS% / Spurs TS% allowed in regular season) * 100
+          (Jayson Tatum TS% / Nets TS% allowed in regular season) * 100
           (0.6146 / 0.5588) * 100 = 109.99 TS+
           
       Kobe Bryant faced a tougher defense relative to the league average scoring environment. After adjusting for this Kobe has a small advantage in efficiency (.55%)       rather than the original edge Jayson had (15.87%)

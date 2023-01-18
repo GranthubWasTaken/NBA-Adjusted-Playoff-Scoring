@@ -109,8 +109,8 @@
    
    Adjusted Scoring:
    
-   Kobe Bryant vs 2004 Spurs: 29.08 PP 75; 110.54 TS+
-   
-   Jayson Tatum vs 2022 Nets: 26.93 PP 75; 109.99 TS+
+         Kobe Bryant vs 2004 Spurs: 29.08 PP 75; 110.54 TS+
+
+         Jayson Tatum vs 2022 Nets: 26.93 PP 75; 109.99 TS+
    
    Kobe Bryant's series--originally appearing far inferior to Jayson Tatum's--now looks superior.

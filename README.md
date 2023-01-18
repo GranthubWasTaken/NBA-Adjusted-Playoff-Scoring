@@ -46,7 +46,7 @@
           
       Kobe Bryant faced a tougher defense relative to the league average scoring environment. After adjusting for this Kobe has a small advantage in efficiency (.55%)       rather than the original edge Jayson had (15.87%)
       
- #Adjusted Scoring Efficiency#
+ #Adjusted Scoring Rate#
 
  Create adjusted playoff scoring rate
   1. Era Scoring Coefficient

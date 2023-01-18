@@ -11,23 +11,99 @@
  
      such as, comparing change in statistical values for each player between regular season and postseason
      e.g. 5 year change in regular season and postseason PTS per 75 (pace-adjusted scoring rate) and TS+ (era/opponent adjusted scoring efficiency) for Kevin Durant from 2015-19.
- Create adjusted playoff efficiency 
-  1. Scraping NBA teams' defensive stats since 1974 (TS% allowed [points per possession allowed])
-  2. Scraping player URL's since 1974 and using them to scrape their playoff series for their TS%
-  3. Dividing a player's TS% by their playoff opponent's regular seasons TS%
-  4. Creating total playoff numbers by weighing for MP in each series
+     
+     
+     
+ Create adjusted playoff efficiency (TS+)
+ 
+  Reasoning: Players' raw scoring stats cannot be accurately compared across various periods of NBA history nor various qualities of opponent defense.
+  
+    ex. 
+        2004 Kobe Bryant vs San Antonio Spurs (24.48 Pts per 75 possessions (PP75); .5304 TS%)
+        2022 Jayson Tatum vs Brooklyn Nets (27.15 Pts per 75 possessions (PP75); .6146 TS%)
+      
+  Jayson Tatum has higher scoring rate and efficiency. Both conventional measures of scoring effectiveness. Is this evidence Tatum had a better scoring series?
+  
+  Basic theory on adjusting for Opponent Quality/Era: 
+  
+  #Adjusted Efficiency#
+  
+  1. Scraping NBA teams' defensive stats since 1974 (TS% allowed [points per possession allowed]).
+  2. Scraping player URL's since 1952 (> 1000 MP) and using their basketball-reference player pages' organized playoff series data table to total playoff scoring.
+   1) Dividing a player's TS% by their playoff opponent's regular seasons TS%; series-by-series
+
+      ex: 
+          2004 Kobe Bryant vs. Spurs
+          (Kobe Bryant TS% / Spurs TS% allowed in regular season) * 100
+          (0.5304 / 0.4798) * 100 = 110.54 TS+
+          
+          2022 Jayson Tatum vs. Nets
+          (Kobe Bryant TS% / Spurs TS% allowed in regular season) * 100
+          (0.6146 / 0.5588) * 100 = 109.99 TS+
+          
+      Kobe Bryant faced a tougher defense relative to the league average scoring environment. After adjusting for this Kobe has a small advantage in efficiency (.55%)       rather than the original edge Jayson had (15.87%)
+      
+ #Adjusted Scoring Efficiency#
 
  Create adjusted playoff scoring rate
-  1. Scraping NBA players' stats since 1974 (league avg. pts per possession for players)
-  2. Finding highest league avg. pts per possession (2021)
-  3. Creating Scoring Coefficient for each season since 1974. 
-  
-     Scoring Coefficient = max league avg pts per possession / current pts per possession
-     
-     ex: 1979 George Gervin   
-     16.720268 / 15.554017 = 1.069751
-     
-  4. Multiply players' PTS per 75 possessions (PP75) by Scoring Coefficient
-  
-     ex: 1979 George Gervin   
-     26.775 * 1.069751 = 28.642583025
+  1. Era Scoring Coefficient
+   1) Scraping NBA/ABA players' stats since 1974 (league avg. pts per possession for players)
+   2) Finding highest league avg. pts per 75 possessions. That is presently 2021 (16.72 PP75) 
+   3) Creating Era Scoring Coefficient for each season since 1974.
+
+      Era Scoring Coefficient = max league avg pts per 75 possessions / current season pts per 75 possessions
+
+      ex: 
+          2004  
+          16.72 (2021 avg PP75) / 15.33 (2004 avg PP75) = 1.09
+          
+          2022  
+          16.72 (2021 avg PP75) / 16.68 (2022 avg PP75) = 1.002
+
+      Be it changes in officiating or league-wide philosophy, scoring is easier in 2022 than it was in 2004 on a possession basis. This is thus accounted for in cross-       era comparisons. 
+
+   4) Adjust players' PTS per 75 possessions (PP75) by Era Scoring Coefficient
+
+      ex: 
+         2004 Kobe Bryant vs Spurs
+         24.48 (Kobe's actual PP75) * 1.09 (Era Scoring Coefficient/Adjustment) = 26.68 (Era Adjusted Scoring Rate)
+         
+         2022 Jayson Tatum vs Nets
+         27.15 (Jayson's actual PP75) * 1.002 (Era Scoring Coefficient/Adjustment) = 27.20 (Era Adjusted Scoring Rate)
+      
+  2. Opponent Scoring Coefficient
+   1) Scraping NBA/ABA teams' stats since 1974 (DefRtg [points allowed per 100 possessions])
+   2) Finding rDefRtg (DefRtg / league avg. DefRtg)
+   3) Creating Opponent Scoring Coefficient for each playoff series
+
+      Opponent Scoring Coefficient = league avg. DefRtg / opponent DefRtg
+
+      ex: 
+          2004 Spurs =
+          (2004 league avg. DefRtg) / (2004 Spurs DefRtg)
+          102.89 / 94.1 (2004 Spurs DefRtg) = 1.09
+          
+          2022 Nets =
+          (2022 league avg. DefRtg) / (2022 Nets DefRtg)
+          111.95 / 112.8 (2004 Spurs DefRtg) = 0.99
+          
+      2022 Nets were a below league average defense (1% worse). 2004 Spurs were 9% better than league average (making them one of the best regular season defenses in         NBA history)
+      
+
+   4) Adjust players' PTS per 75 possessions (PP75) by Opponent Scoring Coefficient
+
+      ex: 
+          2004 Kobe Bryant vs Spurs =    
+          26.68 * 1.09 = 29.08
+          
+          2022 Jayson Tatum vs Nets =    
+          27.20 * 0.99 = 26.93
+      
+   Consquently, after adjusting for era and opponent quality, Kobe Bryant's 2004 series vs the Spurs looks much more in line (or better) than the scoring stats generated by a modern player like Jayson Tatum.
+   
+   Adjusted Scoring:
+   
+   Kobe Bryant vs 2004 Spurs: 29.08 PP 75; 110.54 TS+
+   Jayson Tatum vs 2022 Nets: 26.93 PP 75; 109.99 TS+
+   
+   Kobe Bryant's series--originally appearing far inferior to Jayson Tatum's--now looks superior.

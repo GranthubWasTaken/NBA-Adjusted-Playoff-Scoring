@@ -20,9 +20,9 @@
   
 
     
-        2004 Kobe Bryant vs San Antonio Spurs (24.48 Pts per 75 possessions (PP75); .5304 TS%)
+        2004 Kobe Bryant vs San Antonio Spurs: 24.48 Pts per 75 possessions (PP75); .5304 TS%
         
-        2022 Jayson Tatum vs Brooklyn Nets (27.15 Pts per 75 possessions (PP75); .6146 TS%)
+        2022 Jayson Tatum vs Brooklyn Nets: 27.15 Pts per 75 possessions (PP75); .6146 TS%
       
   Jayson Tatum has higher scoring rate and efficiency. Both conventional measures of scoring effectiveness. Is this evidence Tatum had a better scoring series?
   

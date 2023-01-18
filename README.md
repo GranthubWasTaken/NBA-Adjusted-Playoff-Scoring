@@ -19,6 +19,7 @@
   Reasoning: Players' raw scoring stats cannot be accurately compared across various periods of NBA history nor various qualities of opponent defense.
   
     ex. 
+    
         2004 Kobe Bryant vs San Antonio Spurs (24.48 Pts per 75 possessions (PP75); .5304 TS%)
         2022 Jayson Tatum vs Brooklyn Nets (27.15 Pts per 75 possessions (PP75); .6146 TS%)
       
@@ -54,6 +55,7 @@
       Era Scoring Coefficient = max league avg pts per 75 possessions / current season pts per 75 possessions
 
       ex: 
+      
           2004  
           16.72 (2021 avg PP75) / 15.33 (2004 avg PP75) = 1.09
           
@@ -65,9 +67,9 @@
    4) Adjust players' PTS per 75 possessions (PP75) by Era Scoring Coefficient
 
       ex: 
+      
          2004 Kobe Bryant vs Spurs
          24.48 (Kobe's actual PP75) * 1.09 (Era Scoring Coefficient/Adjustment) = 26.68 (Era Adjusted Scoring Rate)
-         
          2022 Jayson Tatum vs Nets
          27.15 (Jayson's actual PP75) * 1.002 (Era Scoring Coefficient/Adjustment) = 27.20 (Era Adjusted Scoring Rate)
       
@@ -79,10 +81,10 @@
       Opponent Scoring Coefficient = league avg. DefRtg / opponent DefRtg
 
       ex: 
+      
           2004 Spurs =
           (2004 league avg. DefRtg) / (2004 Spurs DefRtg)
           102.89 / 94.1 (2004 Spurs DefRtg) = 1.09
-          
           2022 Nets =
           (2022 league avg. DefRtg) / (2022 Nets DefRtg)
           111.95 / 112.8 (2004 Spurs DefRtg) = 0.99
@@ -93,9 +95,9 @@
    4) Adjust players' PTS per 75 possessions (PP75) by Opponent Scoring Coefficient
 
       ex: 
+      
           2004 Kobe Bryant vs Spurs =    
           26.68 * 1.09 = 29.08
-          
           2022 Jayson Tatum vs Nets =    
           27.20 * 0.99 = 26.93
       

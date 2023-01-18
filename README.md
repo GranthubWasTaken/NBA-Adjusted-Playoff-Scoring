@@ -14,7 +14,7 @@
      
      
      
- Create adjusted playoff efficiency (TS+)
+ # Create adjusted playoff efficiency (TS+)
  
   Reasoning: Players' raw scoring stats cannot be accurately compared across various periods of NBA history nor various qualities of opponent defense.
   

@@ -14,7 +14,7 @@
      
      
      
- # Create adjusted playoff efficiency (TS+)
+ # Create Adjusted Playoff Efficiency (TS+)
  
   Reasoning: Players' raw scoring stats cannot be accurately compared across various periods of NBA history nor various qualities of opponent defense.
   
@@ -114,3 +114,18 @@
          Jayson Tatum vs 2022 Nets: 26.93 PP 75; 109.99 TS+
    
    Kobe Bryant's series--originally appearing far inferior to Jayson Tatum's--now looks superior.
+   
+# Create Estimated Possession Data Opponent TS% Allowed from 1952-73
+
+  Reasoning: Pace is often normalized for comparing players on slower/faster teams or slower/faster era's. Official pace data does not excist before 1974. This data     may be estimated from 1952-73 (using stats that are available) so that cross-era comparisons may be made. With estimated pace we can estimate what DefRtg's             opponents' allowed, and using estimated DefRtg we can go one step further and estimate what TS% teams allowed to their opponents (based on the correlation between     rDefRtg and rTS% allowed from 1974-2022).
+  
+  These numbers come with a hefty grain of salt but their estimated values are better than none at all.
+  
+  1. Estimating Pace: Pace is estimated with the formula developed by Ben Taylor (https://twitter.com/ElGee35)
+  2. Scaling PTS allowed per game into PTS allowed per 100 possesions (defRtg) for each team in the NBA from 1952-73
+  3. Finding correlation between rDefRtg (DefRtg / league avg. DefRtg) and rTS% allowed (TS% allowed / league avg. TS% allowed) from 1974-2022.
+  * This gives us a huge sample of correlation between rDefRtg and rTS% allowed for definite values. Using this correlation we can estimate what TS% teams allowed from 1952-73.
+  * This is thus using an estimated rDefRtg to create an estimated rTS% allowed.
+  4. We can now use same era/opponent adjusted logic used on 1974-2022 playoff data on 1952-73 estimated playoff data. The one exception thus far being the 1954 playoffs as the logic has not been written to handle the initial round robin playoff format
+
+Issues with 1952-73 data: MP, FGA, and FTA, all critical to creating adjusted efficiency, are often missing from NBA boxscores in the 1950's and 1960's. Basketball-Reference uses what I believe is an estimated total number for each players' playoffs. I utilized these numbers whenever MP, FGA, or FTA were missing from a players' series data table. I divided them evenly amongst the number of games played in each series. If there are 240 MP missing amongst 2 series, and 1 series had 4 games and the other series had 5 games, I gave the 4 game series 106.67 MP (240 * (4 Game Series / 9 Game total)) and the 5 game series 133.33 MP (240 * (5 Game Series / 9 Game total)). In reality there is no possible way to definitely know the real distribution of missing MP/FGA/FTA data samples. I divide them evenly among the number of missing games.

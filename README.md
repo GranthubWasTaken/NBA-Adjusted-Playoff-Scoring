@@ -33,10 +33,10 @@
    1) Dividing a player's TS% by their playoff opponent's regular seasons TS%; series-by-series
 
       ex: 
+      
           2004 Kobe Bryant vs. Spurs
           (Kobe Bryant TS% / Spurs TS% allowed in regular season) * 100
           (0.5304 / 0.4798) * 100 = 110.54 TS+
-          
           2022 Jayson Tatum vs. Nets
           (Kobe Bryant TS% / Spurs TS% allowed in regular season) * 100
           (0.6146 / 0.5588) * 100 = 109.99 TS+

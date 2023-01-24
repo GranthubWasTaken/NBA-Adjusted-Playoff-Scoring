@@ -63,7 +63,7 @@
           2022  
           16.72 (2021 avg PP75) / 16.68 (2022 avg PP75) = 1.002
 
-      Be it changes in officiating or league-wide philosophy, scoring is easier in 2022 than it was in 2004 on a possession basis. This is thus accounted for in cross-       era comparisons. 
+      Whether it be due to changes in officiating or league-wide philosophy, scoring is easier in 2022 than it was in 2004 on a possession basis. This is thus accounted for in cross-era comparisons. 
 
    * Adjust players' PTS per 75 possessions (PP75) by Era Scoring Coefficient
 

@@ -117,7 +117,7 @@
    
 # Create Estimated Possession Data Opponent TS% Allowed from 1952-73
 
-  Reasoning: Pace is often normalized for comparing players on slower/faster teams or slower/faster era's. Official pace data does not excist before 1974. This data     may be estimated from 1952-73 (using stats that are available) so that cross-era comparisons may be made. With estimated pace we can estimate what DefRtg's             opponents' allowed, and using estimated DefRtg we can go one step further and estimate what TS% teams allowed to their opponents (based on the correlation between     rDefRtg and rTS% allowed from 1974-2022).
+  Reasoning: Pace is often normalized for sake of comparing players on slower/faster teams or slower/faster era's. Thus we can see scoring ability on a possession basis. Official pace data does not exist before 1974. This data may be estimated from 1952-73 (using stats that are available) so that cross-era comparisons may be made. With estimated pace we can estimate what DefRtg's opponents' allowed, and using estimated DefRtg we can go one step further and estimate what TS% teams allowed to their opponents (based on the correlation between rDefRtg and rTS% allowed from 1974-2022).
   
   These numbers come with a hefty grain of salt but their estimated values are better than none at all.
   

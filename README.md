@@ -14,7 +14,7 @@
      
      
      
- # Create Adjusted Playoff Efficiency (TS+)
+ # Creating Era/Opponent Adjusted Playoff Scoring
  
   Reasoning: Players' raw scoring stats cannot be accurately compared across various periods of NBA history nor various qualities of opponent defense.
   

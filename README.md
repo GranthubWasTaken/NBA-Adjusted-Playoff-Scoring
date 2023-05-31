@@ -33,6 +33,7 @@
   1. Scraping NBA teams' defensive stats since 1974 (TS% allowed [points per possession allowed]).
   2. Scraping player URL's since 1952 (> 1000 MP) and using their basketball-reference player pages' organized playoff series data table to total playoff scoring.
    * Dividing a player's TS% by their playoff opponent's regular seasons TS%; series-by-series
+   * Effectively, player efficiency in playoff series / opponent efficiency allowed in regular season
 
 
       

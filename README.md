@@ -91,7 +91,7 @@
           
           2022 Nets =
           (2022 league avg. DefRtg) / (2022 Nets DefRtg)
-          111.95 / 112.8 (2004 Spurs DefRtg) = 0.99
+          111.95 / 112.8 (2022 Nets DefRtg) = 0.99
           
       2022 Nets were a below league average defense (1% worse). 2004 Spurs were 9% better than league average (making them one of the best regular season defenses in         NBA history)
       

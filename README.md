@@ -2,10 +2,8 @@
 # Functions Scraping Basketball-Reference/Tallying Multi-Year Stretches
  scrape player data from basketball-reference since 1952 (excluding 1954*) for
    * player URL's
-   * shooting location data (only extending back to 1997)
-   * per 100 possession data
-   * advanced data
-   * play-by-play data (only extending back to 1997)
+   * per possession scoring data
+   * scoring efficiency data
    
  find multi-year stretches of statistical values for players (and export csv file containing each unique stretch of data for each player) other functions to organize and manipulate data in more digestible or interesting formats.
  
